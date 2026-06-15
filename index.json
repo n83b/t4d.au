@@ -1,5 +1,10 @@
 [
   {
+	"title": "Getting Started with Apple's mlx-lm",
+	"date": "2026-06-15",
+	"filename": "2026-06-15-mlx-lm-basics.md"
+  },
+  {
 	"title": "Native Container CLI in macOS 26",
 	"date": "2026-06-12",
 	"filename": "2026-06-12-native-containers.md"
