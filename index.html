@@ -206,7 +206,9 @@
 				// 2. Sort entries by date descending (newest first)
 				notes.sort((a, b) => new Date(b.date) - new Date(a.date));
 
-				// 3. Build sidebar links and article elements together
+				// 3. Clear the loading placeholder, then build sidebar links and articles
+				container.innerHTML = '';
+
 				for (const note of notes) {
 					const fileResponse = await fetch(`notes/${note.filename}`);
 					if (!fileResponse.ok) continue;
